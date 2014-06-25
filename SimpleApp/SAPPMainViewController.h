@@ -18,8 +18,8 @@
 @property (strong,nonatomic) SAPPSecondViewController *secondViewController;
 
 @property  (weak,nonatomic) IBOutlet UIView *contentView;
-
-
+- (IBAction)onTouchUpInsideBtnFirstViewController:(id)sender;
+- (IBAction)onTouchUpInsideBtnSecondViewController:(id)sender;
 -(void)showViewController:(SAPPBaseViewController *)viewController;
 
 @end

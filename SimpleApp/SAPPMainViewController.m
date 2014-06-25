@@ -19,9 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-       NSLog(@"view bound  %f , %f",self.contentView.bounds.size.width,self.contentView.bounds.size.height);
-     [self showViewController:self.fisrtViewController];
-       NSLog(@"view bound  %f , %f",self.contentView.bounds.size.width,self.contentView.bounds.size.height);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -42,7 +39,7 @@
 }
 -(SAPPSecondViewController *)secondViewController
 {
-    if(fisrtViewController == nil)
+    if(secondViewController == nil)
     {
         self.secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondView"];
         self.secondViewController.mainViewController = self;
@@ -50,6 +47,16 @@
     return secondViewController;
 }
 
+
+- (IBAction)onTouchUpInsideBtnFirstViewController:(id)sender
+{
+    [self showViewController:self.fisrtViewController];
+    
+}
+- (IBAction)onTouchUpInsideBtnSecondViewController:(id)sender
+{
+    [self showViewController:self.secondViewController];
+}
 
 -(void)showViewController:(SAPPBaseViewController *)viewController
 {
@@ -61,7 +68,6 @@
     viewController.previousViewController = self.currentViewController;
     self.currentViewController = viewController;
     [viewController viewDidAppear:YES];
-    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -71,9 +77,7 @@
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    NSLog(@"view bound  %f , %f",self.contentView.bounds.size.width,self.contentView.bounds.size.height);
     self.currentViewController.view.frame = CGRectMake(0,0,self.contentView.bounds.size.width,self.contentView.bounds.size.height);
-    NSLog(@"view bound  %f , %f",self.contentView.bounds.size.width,self.contentView.bounds.size.height);
 }
 
 
