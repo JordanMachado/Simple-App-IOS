@@ -97,11 +97,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-7O-zxl">
+                                <rect key="frame" x="130" y="314" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9TQ-ua-EAB"/>
+                                    <constraint firstAttribute="height" constant="30" id="gBv-lf-iZu"/>
+                                </constraints>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchUpInsideBtnGoBack:" destination="yeh-By-e7z" eventType="touchUpInside" id="RDs-Sm-XqA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="eND-sf-PJ2" secondAttribute="centerX" id="FOt-JX-gWD"/>
+                            <constraint firstAttribute="centerX" secondItem="cIf-7O-zxl" secondAttribute="centerX" id="ZVP-lg-zuV"/>
                             <constraint firstAttribute="centerY" secondItem="eND-sf-PJ2" secondAttribute="centerY" id="fE7-Aj-DBw"/>
+                            <constraint firstItem="cIf-7O-zxl" firstAttribute="top" secondItem="eND-sf-PJ2" secondAttribute="bottom" constant="64" id="kcJ-5k-sxA"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -132,10 +148,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2I-O6-87F">
+                                <rect key="frame" x="124" y="314" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yrs-2z-ULv"/>
+                                    <constraint firstAttribute="width" constant="71" id="xYw-8y-Mnf"/>
+                                </constraints>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchUpInsideBtnGoBack:" destination="vbQ-xe-ncJ" eventType="touchUpInside" id="3yc-Na-2eM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="d2I-O6-87F" secondAttribute="centerX" id="F8N-If-SiN"/>
                             <constraint firstAttribute="centerX" secondItem="N7r-vQ-vSc" secondAttribute="centerX" id="Nk3-Hb-oIi"/>
+                            <constraint firstItem="d2I-O6-87F" firstAttribute="top" secondItem="N7r-vQ-vSc" secondAttribute="bottom" constant="64" id="Rfw-eN-7Sz"/>
                             <constraint firstAttribute="centerY" secondItem="N7r-vQ-vSc" secondAttribute="centerY" id="wF7-9c-lKs"/>
                         </constraints>
                     </view>

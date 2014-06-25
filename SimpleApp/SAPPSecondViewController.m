@@ -7,6 +7,7 @@
 //
 
 #import "SAPPSecondViewController.h"
+#import "SAPPMainViewController.h"
 
 @interface SAPPSecondViewController ()
 
@@ -46,4 +47,8 @@
 }
 */
 
+- (IBAction)onTouchUpInsideBtnGoBack:(id)sender
+{
+    [self.mainViewController showViewController:self.previousViewController];
+}
 @end

@@ -9,5 +9,6 @@
 #import "SAPPBaseViewController.h"
 
 @interface SAPPSecondViewController : SAPPBaseViewController
+- (IBAction)onTouchUpInsideBtnGoBack:(id)sender;
 
 @end

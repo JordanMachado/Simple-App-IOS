@@ -48,4 +48,9 @@
 }
 */
 
+
+- (IBAction)onTouchUpInsideBtnGoBack:(id)sender
+{
+    [self.mainViewController showViewController:self.previousViewController];
+}
 @end

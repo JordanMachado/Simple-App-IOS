@@ -9,5 +9,7 @@
 #import "SAPPBaseViewController.h"
 
 @interface SAPPFirstViewController : SAPPBaseViewController
+- (IBAction)onTouchUpInsideBtnGoBack:(id)sender;
+
 
 @end
